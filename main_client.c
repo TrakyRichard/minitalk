@@ -2,7 +2,7 @@
 
 void help()
 {
-    ft_printf("Usage: ./client [server PID] [message]");
+    ft_printf("Help: ./client [server PID] [message]");
     return;
 }
 
