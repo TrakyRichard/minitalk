@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_uns.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkanmado <rkanmado@student.42.fr>          +#+  +:+       +#+        */
+/*   By: richard <richard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 02:51:49 by rkanmado          #+#    #+#             */
-/*   Updated: 2022/07/23 04:09:16 by rkanmado         ###   ########.fr       */
+/*   Updated: 2022/10/16 02:06:03 by richard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_print_uns_process(unsigned int n)
 {

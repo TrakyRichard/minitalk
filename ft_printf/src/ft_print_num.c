@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_num.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkanmado <rkanmado@student.42.fr>          +#+  +:+       +#+        */
+/*   By: richard <richard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 01:37:21 by rkanmado          #+#    #+#             */
-/*   Updated: 2022/07/23 06:16:29 by rkanmado         ###   ########.fr       */
+/*   Updated: 2022/10/16 02:06:03 by richard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_print_num_process(int n)
 {

@@ -1,5 +1,6 @@
 NAME = libftprintf.a
 LIBFT = ../libft
+INCLUDES = ../includes/libft.h
 RM = rm -f
 SRCS = 	ft_printf.c \
 			src/ft_print_char.c \
@@ -20,7 +21,7 @@ $(NAME):	$(OBJS)
 					cp $(LIBFT)/libft.a $(NAME)
 					ar rcs $(NAME) $(OBJS)
 $(OBJS): %.o: %.c
-					$(CC) $(flgS) -c $< -o $@
+					$(CC) $(flgS) -c $< -I ../includes -o $@
 
 
 all: 		$(NAME)

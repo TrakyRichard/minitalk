@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
+#    By: richard <richard@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/24 07:00:30 by rkanmado          #+#    #+#              #
-#    Updated: 2022/10/05 03:21:13 by marvin           ###   ########.fr        #
+#    Updated: 2022/10/16 02:10:22 by richard          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ MANDATORIESSRCS=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.
 BONUSSRCS=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c\
 		ft_lstiter.c ft_lstmap.c
 
+INCLUDES = ../includes/libft.h
 MANDATORIESOBJS = $(MANDATORIESSRCS:.c=.o)
 BONUSOBJS = $(BONUSSRCS:.c=.o)
 
@@ -33,13 +34,13 @@ $(NAME): $(MANDATORIESOBJS)
 	@ar rcs $(NAME) $(MANDATORIESOBJS)
 
 $(MANDATORIESOBJS): $(MANDATORIESSRCS)
-		   	$(CC) $(Cflg) -c $(MANDATORIESSRCS)
+		   	$(CC) $(Cflg) -c -I ../includes $(MANDATORIESSRCS)
 
 bonus: $(BONUSOBJS)
 	@ar rcs $(NAME) $(BONUSOBJS)
 
 $(BONUSOBJS): $(BONUSSRCS)
-	$(CC) $(Cflg) -c $(BONUSSRCS)
+	$(CC) $(Cflg) -c -I ../includes $(BONUSSRCS)
 
 clean:
 	@rm -f $(MANDATORIESOBJS) $(BONUSOBJS)

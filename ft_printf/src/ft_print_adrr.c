@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_adrr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkanmado <rkanmado@student.42.fr>          +#+  +:+       +#+        */
+/*   By: richard <richard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 02:26:28 by rkanmado          #+#    #+#             */
-/*   Updated: 2022/07/23 06:43:01 by rkanmado         ###   ########.fr       */
+/*   Updated: 2022/10/16 02:06:41 by richard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_print_adrr_process(unsigned long int n)
 {
